@@ -35,14 +35,14 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [Vet_clinic] <a name="about-project"></a>
 
-> This project involves creating a PostgreSQL database named vet_clinic with a table named animals and performing various SQL queries on it, such as filtering animals by name, date of birth, weight, and neutered status.
+This project involves creating a PostgreSQL database named vet_clinic with a table named animals and performing various SQL queries on it, such as filtering animals by name, date of birth, weight, and neutered status.
 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> PostgreSQL as the database management system
+PostgreSQL as the database management system
 > SQL for querying and manipulating the database
 > Database
 
@@ -71,9 +71,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-> Storing information about animals in a vet clinic.
-> Providing a user-friendly interface for adding, modifying, and querying animal data.
-> Generating reports or summaries based on the animal data.
+- Storing information about animals in a vet clinic.
+- Providing a user-friendly interface for adding, modifying, and querying animal data.
+- Generating reports or summaries based on the animal data.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -125,8 +125,6 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 <h4>Ritika Rawat</h4>
 
 - GitHub: [ritikarawat220](https://github.com/ritikarawat220)
@@ -139,8 +137,6 @@ To run the project, execute the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ Appointment scheduling..] **[new_feature_1]**
 - [Medication tracking..] **[new_feature_2]**
@@ -161,7 +157,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project kindly leave a Star
+- If you like this project kindly leave a Star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,7 +165,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank Microverse for giving me the opportunity to work in this project.
+- I would like to thank Microverse for giving me the opportunity to work in this project.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -177,8 +173,6 @@ Feel free to check the [issues page](../../issues/).
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[How can I securely connect to and authenticate with the PostgreSQL database from my application or development environment, and what libraries or frameworks can I use to simplify this process?]**
 
