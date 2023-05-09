@@ -138,8 +138,8 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ Appointment scheduling..] **[new_feature_1]**
-- [Medication tracking..] **[new_feature_2]**
+-  Appointment scheduling
+- Medication tracking..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
