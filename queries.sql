@@ -56,3 +56,8 @@ SELECT SPECIES,
 AVG(ESCAPE_ATTEMPTS) FROM ANIMALS WHERE DATE_OF_BIRTH BETWEEN 
 '1990-01-01' AND '2000-12-31'
 GROUP BY SPECIES;
+
+-----------------------------------------------------------------------------------
+
+
+
