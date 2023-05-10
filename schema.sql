@@ -26,8 +26,13 @@ CREATE TABLE species (
     name TEXT
 );
 
-ALTER TABLE animals (
+ALTER TABLE animals
     DROP COLUMN species,
     ADD COLUMN species_id INT,
     ADD COLUMN owner_id INT,
-)
+ADD CONSTRAINT fk_species
+  FOREIGN KEY (species_id)
+  REFERENCES species(id),
+ADD CONSTRAINT fk_owner
+  FOREIGN KEY (owner_id)
+  REFERENCES owners(id);
