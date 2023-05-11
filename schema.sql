@@ -62,3 +62,7 @@ CREATE TABLE visits (
     FOREIGN KEY (animal_id) REFERENCES animals(id),
     FOREIGN KEY (vet_id) REFERENCES vets(id)
 );
+
+
+SELECT COUNT(DISTINCT animal_id)
+FROM visits WHERE vet_id = (SELECT id FROM vets WHERE name = 'Stephanie Mendez');
