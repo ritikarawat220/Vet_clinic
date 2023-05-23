@@ -27,6 +27,11 @@ INSERT INTO owners (full_name, age) VALUES
 ('Dean Winchester', 14),
 ('Jodie Whittaker', 38);
 
+-- This will add 2.500.000 owners with full_name = 'Owner <X>' and email = 'owner_<X>@email.com' (~2min approx.)
+insert into owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
+
+
+
 INSERT INTO species (name)VALUES
 ('Pokemon'),
 ('Digimon');
@@ -69,7 +74,7 @@ VALUES
 
 
 
-INSERT INTO visits (animal_id, vet_id, visit_date)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES 
   ((SELECT id from animals WHERE name = 'Agumon' LIMIT 1), (SELECT id from vets WHERE name = 'William Tatcher' LIMIT 1), '2020-05-24'),
   ((SELECT id from animals WHERE name = 'Agumon' LIMIT 1), (SELECT id from vets WHERE name = 'Stephanie Mendez' LIMIT 1), '2020-07-22'),
@@ -92,4 +97,13 @@ VALUES
   ((SELECT id from animals WHERE name = 'Blossom' LIMIT 1), (SELECT id from vets WHERE name = 'Stephanie Mendez' LIMIT 1), '2020-05-24'),
   ((SELECT id from animals WHERE name = 'Blossom' LIMIT 1), (SELECT id from vets WHERE name = 'William Tatcher' LIMIT 1), '2021-01-11');
 
+-- This will add 3.594.280 visits considering you have 10 animals, 4 vets, and it will use around ~87.000 timestamps (~4min approx.)
+INSERT INTO visits (animal_id, vet_id, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
 
+-----------------------------------------------
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';

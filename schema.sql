@@ -21,6 +21,10 @@ CREATE TABLE owners (
     age INT
 );
 
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
 CREATE TABLE species (
     id SERIAL PRIMARY KEY,
     name TEXT
@@ -54,15 +58,18 @@ CREATE TABLE specializations (
     FOREIGN KEY (species_id) REFERENCES species(id)
 );
 
-CREATE TABLE visits (
-    animal_id INT,
-    vet_id INT,
-    visit_date DATE,
-    PRIMARY KEY (animal_id, vet_id, visit_date),
-    FOREIGN KEY (animal_id) REFERENCES animals(id),
-    FOREIGN KEY (vet_id) REFERENCES vets(id)
+CREATE TABLE visits(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  animal_id INT REFERENCES animals(id),
+  vet_id INT REFERENCES vets(id),
+  date_of_visit DATE,
+  PRIMARY KEY(id)
 );
 
+---------------------------------------
 
-SELECT COUNT(DISTINCT animal_id)
-FROM visits WHERE vet_id = (SELECT id FROM vets WHERE name = 'Stephanie Mendez');
+CREATE INDEX animal_id_asc ON visits(animal_id ASC);
+
+CREATE INDEX vet_id_asc ON visits(vet_id ASC);
+
+CREATE INDEX email_asc ON owners(email ASC);

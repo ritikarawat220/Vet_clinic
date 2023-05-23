@@ -131,6 +131,18 @@ To run the project, execute the following command:
 - Twitter: [@ritikarawat22](https://twitter.com/Ritikarawat22)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rawatritika/)
 
+👤 **Eduardo Villarreal**
+
+- GitHub: [@evillaz](https://github.com/evillaz)
+- Twitter: [@evillazz](https://twitter.com/evillazz)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/eduardo-villarreal-144a8925a)
+
+👤 **Tshobohwa Salomon**
+
+- GitHub: [@Tshobohwa](https://github.com/Tshobohwa)
+- Twitter: [@SalomonTshoboh1](https://twitter.com/SalomonTshoboh1)
+- LinkedIn: [@Tshobohwa](https://www.linkedin.com/in/tshobohwasalomon/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
