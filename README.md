@@ -42,9 +42,14 @@ This project involves creating a PostgreSQL database named vet_clinic with a tab
 
 ### Tech Stack <a name="tech-stack"></a>
 
-PostgreSQL as the database management system
-> SQL for querying and manipulating the database
-> Database
+- **Database named vet-clinic**
+- **Table named animal**
+- **Update animal table**
+- **Aggregate animal table**
+- **Query multiple tables**
+- **Many-to-Many relationships**
+- **database performance audit**
+- **database schema diagram**
 
 <details>
   <summary>Client</summary>
